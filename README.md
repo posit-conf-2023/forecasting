@@ -1,4 +1,4 @@
-WORKSHOP_TITLE
+Tidy time series and forecasting in R
 ================
 
 ### posit::conf 2023
