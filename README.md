@@ -3,7 +3,7 @@ Tidy time series and forecasting in R
 
 ### posit::conf 2023
 
-by INSTRUCTOR_NAME
+by Rob J Hyndman, Professor of Statistics, Monash University, Australia
 
 -----
 
@@ -30,18 +30,27 @@ here.
 
 ## Overview
 
-ADD ABSTRACT
+It is common for organizations to collect huge amounts of data over time, and existing time series analysis tools are not always suitable to handle the scale, frequency and structure of the data collected. In this workshop, we will look at some packages and methods that have been developed to handle the analysis of large collections of time series.
 
-**This workshop is for you if you...*
+On day 1, we will look at the tsibble data structure for flexibly managing collections of related time series. We will look at how to do data wrangling, data visualizations and exploratory data analysis. We will explore feature-based methods to explore time series data in high dimensions. A similar feature-based approach can be used to identify anomalous time series within a collection of time series, or to cluster or classify time series. Primary packages for day 1 will be tsibble, lubridate and feasts (along with the tidyverse of course).
 
-ADD THREE POINTS
+Day 2 will be about forecasting. We will look at some classical time series models and how they are automated in the fable package, and we will explore the creation of ensemble forecasts and hybrid forecasts. Best practices for evaluating forecast accuracy will also be covered. Finally, we will look at forecast reconciliation, allowing millions of time series to be forecast in a relatively short time while accounting for constraints on how the series are related.
+
+**This workshop is for you if you...**
+
+* already use the tidyverse packages in R such as dplyr, tidyr, tibble and ggplot2
+* need to analyze large collections of related time series
+* would like to learn how to use some tidy tools for time series analysis including visualization, decomposition and forecasting
 
 ## Prework
 
-ADD INFORMATION YOU WANT LEARNERS TO HAVE / STEPS THEY WANT THEM TO
-COMPLETE PRIOR TO THE WORKSHOP. THIS COULD BE A LINK TO A THREAD ON
-RSTUDIO COMMUNITY, PACKAGE INSTALL INSTRUCTIONS, HOW TO GET AN
-RSTUDIO.CLOUD ACCOUNT, ETC.
+People who don’t use R regularly, or don’t know the tidyverse packages, are recommended to do the tutorials at [learnr.numbat.space](http://learnr.numbat.space) beforehand.
+
+Please bring your own laptop with a recent version of R and RStudio installed. The following code will install the main packages needed for the workshop.
+
+```r
+install.packages(c("tidyverse", "fpp3", "GGally", "sugrrants"))
+```
 
 ## Schedule
 
@@ -71,7 +80,7 @@ RSTUDIO.CLOUD ACCOUNT, ETC.
 
 ## Instructor
 
-ADD INSTRUCTOR BIO
+Rob J Hyndman is Professor of Statistics in the Department of Econometrics and Business Statistics at Monash University, Australia. Rob is the author of over 200 research papers, 5 books, and over 50 R packages (most of which are on CRAN). He is an elected Fellow of both the Australian Academy of Science and the Academy of Social Sciences in Australia. In 2007, he received the Moran medal from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. In 2021, he received the Pitman medal from the Statistical Society of Australia. For over 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.
 
 -----
 
