@@ -1,0 +1,29 @@
+---
+title: "Transformations"
+subtitle: "<span class='code'>13:30-14:15</span>"
+date: "2023-09-17"
+image: "suzanne-d-williams-VMKBFR6r_jg-unsplash.jpg"
+---
+
+<!-- Materials will be distributed sooner to the event. -->
+
+```{=html}
+<embed src="../../materials/3-transformations.pdf" type="application/pdf" width="750px" height="420px">
+```
+
+## Lab sessions
+
+### Lab Session 6
+
+Consider the GDP information in `global_economy`. Plot the GDP per capita for each country over time. Which country has the highest GDP per capita? How has this changed over time?
+
+### Lab Session 7
+
+1. For the following series, find an appropriate Box-Cox transformation in order to stabilise the variance.
+
+    * United States GDP from `global_economy`
+    * Slaughter of Victorian “Bulls, bullocks and steers” in `aus_livestock`
+    * Victorian Electricity Demand from `vic_elec`.
+    * Gas production from `aus_production`
+
+2. Why is a Box-Cox transformation unhelpful for the `canadian_gas` data?

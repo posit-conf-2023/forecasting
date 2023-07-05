@@ -1,0 +1,30 @@
+---
+title: "Seasonality and trends"
+subtitle: "<span class='code'>14:15-15:00</span>"
+date: "2023-09-17"
+image: "chris-lawton-5IHz5WhosQE-unsplash.jpg"
+---
+
+<!-- Materials will be distributed sooner to the event. -->
+
+```{=html}
+<embed src="../../materials/4-decomposition.pdf" type="application/pdf" width="750px" height="420px">
+```
+
+## Lab sessions
+
+### Lab Session 8
+
+1. Produce the following decomposition
+
+    ```r
+    canadian_gas |>
+      STL(Volume ~ season(window=7) + trend(window=11)) |>
+      autoplot()
+    ```
+
+2. What happens as you change the values of the two `window` arguments?
+
+3. How does the seasonal shape change over time? [Hint: Try plotting the seasonal component using `gg_season`.]
+
+4. Can you produce a plausible seasonally adjusted series? [Hint: `season_adjust` is one of the variables returned by `STL`.]

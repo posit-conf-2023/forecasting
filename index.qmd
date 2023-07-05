@@ -1,0 +1,74 @@
+---
+title: Tidy time series and forecasting in R
+---
+
+**posit::conf 2023**
+
+by Rob J Hyndman, Professor of Statistics, Monash University, Australia
+
+🗓️  17-18 September 2023\
+⏰  09:00 - 17:00\
+🏨  ROOM TBD\
+✍️  [pos.it/conf](http://pos.it/conf)
+
+-----
+
+## Overview
+
+It is common for organizations to collect huge amounts of data over time, and existing time series analysis tools are not always suitable to handle the scale, frequency and structure of the data collected. In this workshop, we will look at some packages and methods that have been developed to handle the analysis of large collections of time series.
+
+On day 1, we will look at the **tsibble** data structure for flexibly managing collections of related time series. We will look at how to do data wrangling, data visualizations and exploratory data analysis. We will explore feature-based methods to explore time series data in high dimensions. A similar feature-based approach can be used to identify anomalous time series within a collection of time series, or to cluster or classify time series. Primary packages for day 1 will be [tsibble](https://tsibble.tidyverts.org), [lubridate](https://lubridate.tidyverse.org) and [feasts](https://feasts.tidyverts.org) (along with the [tidyverse](https://tidyverse.org) of course).
+
+Day 2 will be about forecasting. We will look at some classical time series models and how they are automated in the [fable](https://fable.tidyverts.org) package, and we will explore the creation of ensemble forecasts and hybrid forecasts. Best practices for evaluating forecast accuracy will also be covered. Finally, we will look at forecast reconciliation, allowing millions of time series to be forecast in a relatively short time while accounting for constraints on how the series are related.
+
+**This workshop is for you if you...**
+
+* already use the tidyverse packages in R such as dplyr, tidyr, tibble and ggplot2
+* need to analyze large collections of related time series
+* would like to learn how to use some tidy tools for time series analysis including visualization, decomposition and forecasting
+
+## Prework
+
+People who don’t use R regularly, or don’t know the tidyverse packages, are recommended to do the tutorials at [learnr.numbat.space](http://learnr.numbat.space) beforehand.
+
+Please bring your own laptop with a recent version of R and RStudio installed. The following code will install the main packages needed for the workshop.
+
+```r
+install.packages(c("tidyverse", "fpp3", "GGally", "sugrrants"))
+```
+
+## Schedule
+
+### Day 1
+
+| Time          | Activity         |
+| :------------ | :--------------- |
+| 09:00 - 10:30 | Session 1        |
+| 10:30 - 11:00 | *Coffee break*   |
+| 11:00 - 12:30 | Session 2        |
+| 12:30 - 13:30 | *Lunch break*    |
+| 13:30 - 15:00 | Session 3        |
+| 15:00 - 15:30 | *Coffee break*   |
+| 15:30 - 17:00 | Session 4        |
+
+### Day 2
+
+| Time          | Activity         |
+| :------------ | :--------------- |
+| 09:00 - 10:30 | Session 1        |
+| 10:30 - 11:00 | *Coffee break*   |
+| 11:00 - 12:30 | Session 2        |
+| 12:30 - 13:30 | *Lunch break*    |
+| 13:30 - 15:00 | Session 3        |
+| 15:00 - 15:30 | *Coffee break*   |
+| 15:30 - 17:00 | Session 4        |
+
+## Instructor
+
+![](images/rob.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Professor Rob Hyndman" width="200"}
+
+[**Rob J Hyndman**](https://robjhyndman.com/) is a Professor of Statistics in the [Department of Econometrics and Business Statistics](http://business.monash.edu/econometrics-and-business-statistics) at [Monash University](https://www.monash.edu), and an elected Fellow of both the [Australian Academy of Science](https://www.science.org.au/profile/rob-hyndman) and the [Academy of Social Sciences in Australia](https://socialsciences.org.au/academy-fellow/?sId=0032v00003JxrvjAAB). He is the author of over 200 research papers and 5 books in statistical science. In 2007, he received the [Moran medal](https://www.science.org.au/past-winners/2007-awardees#moran) from the Australian Academy of Science for his contributions to statistical research, especially in the area of statistical forecasting. In 2021, he received the [Pitman medal](https://www.statsoc.org.au/Pitman-Medal-Recipients) from the Statistical Society of Australia. For over 30 years, Rob has maintained an active consulting practice, assisting hundreds of companies and organizations around the world. He has won awards for his research, teaching, consulting and graduate supervision.
+
+------------------------------------------------------------------------
+
+![](https://licensebuttons.net/l/by-nc-sa/3.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).

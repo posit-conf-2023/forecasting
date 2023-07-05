@@ -1,0 +1,43 @@
+---
+title: "Dynamic regression"
+subtitle: "<span class='code'>14:15-15:00</span>"
+date: "2023-09-18"
+image: "zenad-nabil-NKK2nbMBRIc-unsplash.jpg"
+---
+
+<!-- Materials will be distributed sooner to the event. -->
+
+```{=html}
+<embed src="../../materials/9-dynamic-regression.pdf" type="application/pdf" width="750px" height="420px">
+```
+
+## Lab sessions
+
+### Lab Session 18
+
+Repeat the daily electricity example, but instead of using a quadratic function of temperature, use a piecewise linear function with the "knot" around 20 degrees Celsius (use predictors `Temperature` & `Temp2`). How can you optimize the choice of knot?
+
+The data can be created as follows.
+
+```{r echo=TRUE, eval=FALSE}
+vic_elec_daily <- vic_elec |>
+  filter(year(Time) == 2014) |>
+  index_by(Date = date(Time)) |>
+  summarise(
+    Demand = sum(Demand)/1e3,
+    Temperature = max(Temperature),
+    Holiday = any(Holiday)
+  ) |>
+  mutate(
+    Temp2 = I(pmax(Temperature-20,0)),
+    Day_Type = case_when(
+      Holiday ~ "Holiday",
+      wday(Date) %in% 2:6 ~ "Weekday",
+      TRUE ~ "Weekend"
+    )
+  )
+```
+
+### Lab Session 19
+
+Repeat Lab Session 18 but using all available data, and handling the annual seasonality using Fourier terms.

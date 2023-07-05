@@ -1,0 +1,42 @@
+project:
+  type: website
+  resources:
+    - "materials/*.pdf"
+  render:
+    - "*.qmd"
+    - "!materials"
+
+date-format: "D MMMM YYYY"
+
+execute:
+  echo: true
+  warning: false
+
+website:
+  page-navigation: true
+  title: "Tidy time series and forecasting in R"
+  description: "Home page for Posit 2023 Tidy time series & forecasting workshop"
+  repo-url: https://github.com/posit-conf-2023/forecasting
+  twitter-card:
+    creator: "@robjhyndman"
+  page-footer:
+    right: "© 2023, <a href='https://robjhyndman.com'>Rob J Hyndman </a>"
+    background: "#426D98"
+  navbar:
+    background: "#426D98"
+    pinned: true
+    align: center
+    right:
+      - icon: github
+        href: https://github.com/posit-conf-2023/forecasting
+    left:
+      - href: day1.qmd
+      - href: day2.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    mainfont: "Fira Sans"
+    template-partials: partials.html

@@ -1,0 +1,45 @@
+---
+title: "Time series graphics"
+subtitle: "<span class='code'>11:00-12:30</span>"
+date: "2023-09-17"
+image: "isaac-smith-AT77Q0Njnt0-unsplash.jpg"
+---
+
+<!-- Materials will be distributed sooner to the event. -->
+
+```{=html}
+<embed src="../../materials/2-graphics.pdf" type="application/pdf" width="750px" height="420px">
+```
+
+## Lab sessions
+
+### Lab Session 3
+
+1. Look at the quarterly tourism data for the Snowy Mountains
+
+    ```r
+    snowy <- tourism |> filter(Region == "Snowy Mountains")
+    ```
+
+    - Use `autoplot()`, `gg_season()` and `gg_subseries()` to explore the data.
+    - What do you learn?
+
+2. Produce a calendar plot for the `pedestrian` data from one location and one year.
+
+### Lab Session 4
+
+We have introduced the following functions: `gg_lag` and `ACF`. Use these functions to explore the four time series: `Bricks` from `aus_production`, `Lynx` from `pelt`, `Close` price of Amazon from `gafa_stock`, `Demand` from `vic_elec`. Can you spot any seasonality, cyclicity and trend? What do you learn about the series?
+
+### Lab Session 5
+
+You can compute the daily changes in the Google stock price in 2018 using
+
+```{r, eval = FALSE}
+dgoog <- gafa_stock |>
+  filter(Symbol == "GOOG", year(Date) >= 2018) |>
+  mutate(trading_day = row_number()) |>
+  update_tsibble(index=trading_day, regular=TRUE) |>
+  mutate(diff = difference(Close))
+```
+
+Does `diff` look like white noise?

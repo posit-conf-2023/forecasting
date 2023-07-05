@@ -1,0 +1,20 @@
+---
+title: "Day 1"
+date: 17 September 2023"
+listing:
+  contents:
+    - sessions/day1/*.qmd
+  type: table
+  fields: [image, subtitle, title]
+  field-display-names:
+    subtitle: "Time"
+    title: "Session"
+  table-hover: true
+  date-format: "MMMM DD, YYYY"
+  sort: [filename]
+  sort-ui: false
+  filter-ui: false
+  image-height: 75px
+tbl-colwidths: [5,20,50,25]
+editor: source
+---

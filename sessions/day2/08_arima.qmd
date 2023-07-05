@@ -1,0 +1,29 @@
+---
+title: "ARIMA models"
+subtitle: "<span class='code'>13:30-14:15</span>"
+date: "2023-09-18"
+image: "jason-richard-Qsq9eW5C0TA-unsplash.jpg"
+---
+
+<!-- Materials will be distributed sooner to the event. -->
+
+```{=html}
+<embed src="../../materials/8-arima.pdf" type="application/pdf" width="750px" height="420px">
+```
+
+## Lab sessions
+
+### Lab Session 16
+
+For the United States GDP data (from `global_economy`):
+
+ * Fit a suitable ARIMA model for the logged data.
+ * Produce forecasts of your fitted model. Do the forecasts look reasonable?
+
+### Lab Session 17
+
+For the Australian tourism data (from `tourism`):
+
+ * Fit a suitable ARIMA model for all data.
+ * Produce forecasts of your fitted models.
+ * Check the forecasts for the "Snowy Mountains" and "Melbourne" regions. Do they look reasonable?

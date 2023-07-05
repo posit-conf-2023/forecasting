@@ -1,0 +1,10 @@
+---
+title: "_Coffee Break_"
+subtitle: "<span class='code'>10:30-11:00</span>"
+date: "2023-09-18"
+image: "nathan-dumlao-XOhI_kW_TaM-unsplash.jpg"
+---
+
+Time for a coffee break!
+
+Feel free to ask me some questions, or simply enjoy the break.
