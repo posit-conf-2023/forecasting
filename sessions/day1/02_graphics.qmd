@@ -34,7 +34,7 @@ We have introduced the following functions: `gg_lag` and `ACF`. Use these functi
 
 You can compute the daily changes in the Google stock price in 2018 using
 
-```{r, eval = FALSE}
+```r
 dgoog <- gafa_stock |>
   filter(Symbol == "GOOG", year(Date) >= 2018) |>
   mutate(trading_day = row_number()) |>

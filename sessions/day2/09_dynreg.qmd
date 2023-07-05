@@ -19,7 +19,7 @@ Repeat the daily electricity example, but instead of using a quadratic function 
 
 The data can be created as follows.
 
-```{r echo=TRUE, eval=FALSE}
+```r
 vic_elec_daily <- vic_elec |>
   filter(year(Time) == 2014) |>
   index_by(Date = date(Time)) |>
