@@ -1,0 +1,133 @@
+% Colors
+\definecolor{shadecolor}{RGB}{225,225,225}
+\setbeamercolor{description item}{fg=Orange}
+\definecolor{MonashBlue}{RGB}{66,109,152}
+\definecolor{burntorange}{rgb}{0.8, 0.33, 0.0}
+
+% Packages
+\usepackage{amsmath, bm, amssymb, amsthm, mathrsfs,pifont}
+\usepackage{url}
+\usepackage{multirow, booktabs, float, textcmds, siunitx}
+\usepackage{bm,booktabs,animate,ragged2e,multicol,microtype,hyperref}
+\usepackage{fontawesome5}
+
+% Figures
+\graphicspath{{figs/}}
+
+% Fonts
+\fontsize{13}{15}\sf
+\setbeamerfont{title}{series=\bfseries,parent=structure,size=\fontsize{24}{24}}
+\ifcsname Shaded\endcsname
+  \definecolor{shadecolor}{RGB}{225,225,225}
+  \renewenvironment{Shaded}{\vspace*{0.15cm}\color{black}\fontsize{10}{10}\sf\begin{snugshade}\color{black}}{\end{snugshade}}
+\fi
+
+% gt dependencies
+\usepackage{longtable,caption,setspace}
+\captionsetup{font={small,stretch=0.80}}
+
+% My definitions
+
+\def\E{\text{E}}
+\def\V{\text{Var}}
+\def\up#1{\raisebox{-0.3cm}{#1}}
+\def\pred#1#2#3{\hat{#1}_{#2|#3}}
+\def\damped{$_\text{d}$}
+\def\h+{h_{m}^{+}}
+\def\str#1{\rlap{#1}\textcolor{red}{\rule{1cm}{0.1cm}}}
+
+\def\st#1{\rlap{#1}\textcolor{red}{\rule{1cm}{0.1cm}}}
+\def\bY{\bm{y}}
+\def\by{\bm{y}}
+\def\bS{\bm{S}}
+\def\bI{\text{\rm\textbf{I}}}
+\def\bbeta{\bm{\beta}}
+\def\bSigma{\bm{\Sigma}}
+\def\bW{\bm{\Sigma}}
+\def\Var{\text{Var}}
+\def\var{\text{Var}}
+\def\bOmega{\bm{\Omega}}
+\def\bLambda{\bm{\Lambda}}
+\let\mc\multicolumn
+\def\hl{\color[RGB]{230, 172, 0}}
+
+\def\forecast{\begin{alertblock}{}\fontsize{10}{11}\sf
+ A forecast is an estimate of the probabilities of possible futures.
+\end{alertblock}}
+
+\def\simfutures{\begin{textblock}{2.9}(12.8,7.7)
+\begin{block}{}\fontsize{10}{11}\sf
+Simulated futures from an ETS model
+\end{block}\end{textblock}}
+
+\setbeamertemplate{title page}
+{\placefig{-0.01}{-0.01}{width=1.01\paperwidth,height=1.01\paperheight}{chicago.jpg}
+\begin{textblock}{8.5}(.5,0.2)
+  \raggedright\fontsize{20}{20}\selectfont\bfseries\sffamily\textcolor{Orange}{\inserttitle}\\[0.2cm]
+  \fontsize{12}{12}\selectfont\bfseries\sffamily\textcolor{Orange}{\insertsubtitle}
+  \end{textblock}
+\placefig{8.5}{.2}{width=2.4cm}{tsibble.png}
+\placefig{10.9}{.2}{width=2.4cm}{feasts.png}
+\placefig{13.3}{.2}{width=2.4cm}{fable.png}
+\begin{textblock}{7.5}(.5,8.5)\fontsize{9}{9}\sf
+\textcolor{Orange}{\href{http://bit.ly/fable2023}{bit.ly/fable2023}}
+\end{textblock}
+\begin{textblock}{10}(13.2,8.8)\fontsize{5}{5}\sf
+\textcolor[rgb]{0.8,0.8,0.8}{Photo by \href{https://unsplash.com/@maxwbender?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText}{Max Bender} on \href{https://unsplash.com/wallpapers/travel/chicago?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText}{Unsplash}}
+\end{textblock}
+}
+
+% Tikz plots
+\usepackage{tikz}
+\usetikzlibrary{trees,shapes,arrows,matrix,shadows,positioning,calc}
+\tikzstyle{decision} = [diamond, draw, fill=blue!20,
+    text width=4.5em, text badly centered, node distance=4cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20,
+    text width=5cm, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, thick, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em, text centered]
+\tikzstyle{connector} = [->,thick]
+
+\tikzset{
+  basic/.style  = {draw, text width=2cm, font=\sffamily, rectangle},
+  root/.style   = {basic, text width=3cm, rounded corners=2pt, thin, align=center, fill=red!30},
+  level 2a/.style = {basic, rounded corners=2pt, thin,align=center, fill=blue!50, text width=7em},
+  level 2b/.style = {basic, rounded corners=2pt, thin,align=center, fill=green!50, text width=7em},
+  level 3a/.style = {basic, rounded corners=2pt, thin, align=center, fill=blue!30, text width=4em},
+  level 3b/.style = {basic, rounded corners=2pt, thin, align=center, fill=green!30, text width=4em},
+  level 4a/.style = {basic, rounded corners=2pt, thin, align=left, fill=blue!10, text width=3.5em},
+  level 4b/.style = {basic, rounded corners=2pt, thin, align=left, fill=green!10, text width=3.5em}
+}
+
+% % BIBLIOGRAPHIES
+% \usepackage[style=authoryear,bibencoding=utf8,minnames=1,maxnames=4, maxbibnames=99,natbib=true,dashed=false,terseinits=true,giveninits=true,uniquename=false,uniquelist=false,labeldate=true,doi=false, isbn=false, natbib=true,backend=biber]{biblatex}
+
+% \DeclareFieldFormat{url}{\url{#1}}
+% \DeclareFieldFormat[article]{pages}{#1}
+% \DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
+% \DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+% \DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+% \DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+% \DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
+% \DeclareFieldFormat[article]{url}{}
+% \DeclareFieldFormat[Techreport]{Url}{}
+% \DeclareFieldFormat[book]{url}{}
+% \DeclareFieldFormat[inbook]{url}{}
+% \DeclareFieldFormat[incollection]{url}{}
+% \DeclareFieldFormat[inproceedings]{url}{}
+% \DeclareFieldFormat[inproceedings]{title}{#1}
+% \DeclareFieldFormat{shorthandwidth}{#1}
+% %\DeclareFieldFormat{extrayear}{}
+% % No dot before number of articles
+% \usepackage{xpatch}
+% \xpatchbibmacro{volume+number+eid}{\setunit*{\adddot}}{}{}{}
+% % Remove In: for an article.
+% \renewbibmacro{in:}{%
+%   \ifentrytype{article}{}{%
+%   \printtext{\bibstring{in}\intitlepunct}}}
+
+% \AtEveryBibitem{\clearfield{month}}
+% \AtEveryCitekey{\clearfield{month}}
+% \AtBeginBibliography{\fontsize{11}{11}\sf}
+\setbeamertemplate{frametitle continuation}{}
