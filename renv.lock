@@ -77,7 +77,7 @@
     },
     "MASS": {
       "Package": "MASS",
-      "Version": "7.3-58.4",
+      "Version": "7.3-60",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -88,7 +88,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "a3142b2a022b8174ca675bc8b80cdc4e"
+      "Hash": "a56a6365b3fa73293ea8d084be0d9bb0"
     },
     "Matrix": {
       "Package": "Matrix",
@@ -193,7 +193,7 @@
     },
     "RcppArmadillo": {
       "Package": "RcppArmadillo",
-      "Version": "0.12.4.0.0",
+      "Version": "0.12.4.1.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -203,7 +203,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "5402c9d935b45fe528538703b5edf680"
+      "Hash": "44b6ca3a6d22b4c87cdd6140e6f15245"
     },
     "TTR": {
       "Package": "TTR",
@@ -738,19 +738,14 @@
     },
     "fma": {
       "Package": "fma",
-      "Version": "2.5.0.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "fma",
-      "RemoteUsername": "robjhyndman",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "a08bd4d9bb8273a1aed31978f8548f65349fc9ef",
+      "Version": "2.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "forecast"
       ],
-      "Hash": "eaaae5b353c75ad88924fecdc95cefb0"
+      "Hash": "374bc7e9c7b5609f6692c1692f6bfa48"
     },
     "fontawesome": {
       "Package": "fontawesome",
@@ -782,9 +777,9 @@
     },
     "forecast": {
       "Package": "forecast",
-      "Version": "8.21.0.9000",
+      "Version": "8.21",
       "Source": "Repository",
-      "Repository": "REPO_NAME",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "Rcpp",
@@ -804,7 +799,7 @@
         "urca",
         "zoo"
       ],
-      "Hash": "a5691f3f49e6cc66d56d6a3760399730"
+      "Hash": "ef845ee0a60ce95240085d60f6daef02"
     },
     "fpp3": {
       "Package": "fpp3",
@@ -1254,21 +1249,18 @@
     },
     "lintr": {
       "Package": "lintr",
-      "Version": "3.0.2.9000",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "lintr",
-      "RemoteUsername": "jimhester",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "ba896ef661751a78d413d469161bcc3b706f4a44",
+      "Version": "3.0.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "backports",
         "codetools",
+        "crayon",
         "cyclocomp",
         "digest",
         "glue",
+        "jsonlite",
         "knitr",
         "rex",
         "stats",
@@ -1276,7 +1268,7 @@
         "xml2",
         "xmlparsedata"
       ],
-      "Hash": "c3575978a97e831c8f7a769e4f4708ab"
+      "Hash": "b21ebd652d940f099915221f3328ab7b"
     },
     "listenv": {
       "Package": "listenv",
@@ -1973,13 +1965,8 @@
     "sugrrants": {
       "Package": "sugrrants",
       "Version": "0.2.8",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "sugrrants",
-      "RemoteUsername": "earowang",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "8e3b0669abe97e08553ee78d9fd29ebe96e1eae9",
+      "Source": "Repository",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "dplyr",
@@ -1989,7 +1976,7 @@
         "lubridate",
         "rlang"
       ],
-      "Hash": "0e812aad8a79ecf1c7b77180ef0ee8ad"
+      "Hash": "b434556b6dbfc1e0ce54160d26b76812"
     },
     "systemfonts": {
       "Package": "systemfonts",
@@ -2204,13 +2191,8 @@
     "tsibble": {
       "Package": "tsibble",
       "Version": "1.1.3",
-      "Source": "GitHub",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "tsibble",
-      "RemoteUsername": "tidyverts",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "04b36e7ee9ed4c7bded6b4b938275a0f23da6bd0",
+      "Source": "Repository",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "anytime",
@@ -2225,7 +2207,7 @@
         "tidyselect",
         "vctrs"
       ],
-      "Hash": "096fbe69c0a966cf215810aa2e17c091"
+      "Hash": "a9d10100310663a7583cf7e16a990e6f"
     },
     "tsibbledata": {
       "Package": "tsibbledata",
