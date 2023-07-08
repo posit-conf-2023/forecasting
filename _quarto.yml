@@ -39,3 +39,5 @@ format:
     toc: true
     mainfont: "Fira Sans"
     template-partials: partials.html
+language:
+  title-block-published: "Date"

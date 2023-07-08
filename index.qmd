@@ -4,7 +4,7 @@ title: Tidy time series and forecasting in R
 
 **posit::conf 2023**
 
-by Rob J Hyndman, Professor of Statistics, Monash University, Australia
+by [Rob J Hyndman](https://robjhyndman.com),  Monash University, Australia
 
 🗓️  17-18 September 2023\
 ⏰  09:00 - 17:00\
