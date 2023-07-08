@@ -35,8 +35,7 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: [cosmo, style.scss]
     toc: true
     mainfont: "Fira Sans"
     template-partials: partials.html
