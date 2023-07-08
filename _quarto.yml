@@ -35,9 +35,11 @@ website:
 
 format:
   html:
-    theme: [cosmo, style.scss]
+    theme: tango
+    css: styles.css
     toc: true
-    mainfont: "Fira Sans"
-    template-partials: partials.html
+    include-in-header:
+      file: header.html
+
 language:
   title-block-published: "Date"

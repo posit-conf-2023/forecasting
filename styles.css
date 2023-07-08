@@ -1,0 +1,10 @@
+:root {
+  --bs-font-sans-serif: 'Fira Sans', sans-serif;
+}
+body {
+  font-family: 'Fira Sans',sans-serif;
+}
+a {
+  color: #447ca7;
+  text-decoration: none;
+}
