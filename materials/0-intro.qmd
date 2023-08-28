@@ -22,13 +22,14 @@ source("setup.R")
 \end{alertblock}
 \end{textblock}
 
-\placefig{0.6}{5.4}{width=3.5cm}{Mitch}
 \begin{textblock}{8.2}(5.6,5.4)
-\begin{alertblock}{Mitchell O'Hara-Wild}
-\href{https://mitchelloharawild.com}{\faIcon{home} mitchelloharawild.com}\\
-\href{https://github.com/mitchoharawild}{\faIcon{github}  @mitchelloharawild}\\
-\href{mailto:Mitch.OHara-Wild@monash.edu}{\faIcon{envelope}  Mitch.OHara-Wild@monash.edu}
-\end{alertblock}
+\begin{block}{Tutors}
+\begin{itemize}\tightlist
+\item Cosima Meyer
+\item Davis Vaughan
+\item Joscelin Rocha-Hidalgo
+\end{itemize}
+\end{block}
 \end{textblock}
 
 ## Assumptions
