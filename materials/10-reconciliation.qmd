@@ -497,4 +497,4 @@ fc |>
 * Use forecast reconciliation with the PBS data, using ETS, ARIMA and SNAIVE models, applied to all but the last 3 years of data.
 * Which type of model works best?
 * Does the reconciliation improve the forecast accuracy?
-* Why doesn't the reconcililation make any difference to the SNAIVE forecasts?
+* Why doesn't the reconciliation make any difference to the SNAIVE forecasts?
