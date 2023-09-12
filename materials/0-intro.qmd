@@ -81,6 +81,8 @@ source("setup.R")
 
 ## Install required packages
 
+\large
+
 ```r
 install.packages(c(
   "tidyverse",
@@ -88,6 +90,13 @@ install.packages(c(
   "GGally"
 ))
 ```
+
+\pause\vspace*{1cm}
+\begin{alertblock}{Posit Cloud}
+\LARGE\textbf{bit.ly/tidytscloud}
+\end{alertblock}
+
+
 
 ## Approximate outline
 \vspace*{-0.1cm}\centering\fontsize{12}{12}\sf
@@ -108,5 +117,5 @@ install.packages(c(
   \bottomrule
 \end{tabular}
 
-\vspace*{.0cm}\begin{alertblock}{}{\centerline{\Large\textbf{bit.ly/fable2023}}}
+\vspace*{.0cm}\begin{alertblock}{}{\centerline{\Large\textbf{bit.ly/tidyts2023}}}
 \end{alertblock}
