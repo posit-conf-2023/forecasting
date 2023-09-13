@@ -18,7 +18,7 @@ format:
       opts_chunk:
         dev: "CairoPDF"
 include-in-header: header.tex
-keep-tex: true
+keep-tex: false
 toc: false
 highlight-style: tango
 execute:
