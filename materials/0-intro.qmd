@@ -10,6 +10,18 @@ author: "Rob J Hyndman"
 source("setup.R")
 ```
 
+## Admin
+\fontsize{13}{14}\sf
+
+- WiFi:
+  - Network: Posit Conf 2023
+  - Password: conf2023
+- Gender-neutral bathrooms: Grand Suite
+- Meditation/prayer rooms: Grand Suite 2A and 2B. Open Sunday - Tuesday 7:30 am -- 7:00 pm, Wednesday 8:00 am -- 6:00 pm.
+- Lactation room: Grand Suite 1. Open Sunday - Tuesday 7:30 am -- 7:00 pm, Wednesday 8:00 am -- 6:00 pm.
+- Participants who do not wish to be photographed have red lanyards; please respect their choices.
+- Code of conduct & COVID policies: https://posit.co/code-of-conduct/. Please review carefully. Violations can be reported in person, by email, or by phone.
+
 ## Instructors
 
 \placefig{0.6}{1.5}{width=3.5cm}{Rob}
@@ -119,3 +131,21 @@ install.packages(c(
 
 \vspace*{.0cm}\begin{alertblock}{}{\centerline{\Large\textbf{bit.ly/tidyts2023}}}
 \end{alertblock}
+
+## Sticky notes
+
+\placefig{1}{2}{width=9.5cm}{sticky-notes}
+
+\placefig{10.8}{.5}{width=4.5cm, height=200cm}{figs/hand.png}
+
+\begin{textblock}{4}(6.7,3.9)\large
+I've finished
+\end{textblock}
+
+\begin{textblock}{4}(1.65,3.9)\large
+I need help
+\end{textblock}
+
+\begin{textblock}{2.5}(12.6,6.8)\large
+I have a question
+\end{textblock}

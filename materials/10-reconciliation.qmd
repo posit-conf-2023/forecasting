@@ -498,3 +498,11 @@ fc |>
 * Which type of model works best?
 * Does the reconciliation improve the forecast accuracy?
 * Why doesn't the reconciliation make any difference to the SNAIVE forecasts?
+
+## Feedback
+
+\begin{alertblock}{}
+\centerline{\textbf{pos.it/conf-workshop-survey}}
+\end{alertblock}
+
+Your feedback is crucial! Data from the survey informs curriculum and format decisions for future conf workshops, and we really appreciate you taking the time to provide it.
