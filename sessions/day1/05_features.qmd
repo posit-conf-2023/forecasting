@@ -8,7 +8,7 @@ image: "john-barkiple-l090uFWoPaI-unsplash.jpg"
 <!-- Materials will be distributed sooner to the event. -->
 
 ```{=html}
-<embed src="../../materials/5-features.pdf" type="application/pdf" width="750px" height="420px">
+<embed src="../../materials/5-feasts.pdf" type="application/pdf" width="750px" height="420px">
 ```
 
 ## Lab sessions

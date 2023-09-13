@@ -8,7 +8,7 @@ image: "chris-lawton-5IHz5WhosQE-unsplash.jpg"
 <!-- Materials will be distributed sooner to the event. -->
 
 ```{=html}
-<embed src="../../materials/4-decomposition.pdf" type="application/pdf" width="750px" height="420px">
+<embed src="../../materials/4-decompositions.pdf" type="application/pdf" width="750px" height="420px">
 ```
 
 ## Lab sessions

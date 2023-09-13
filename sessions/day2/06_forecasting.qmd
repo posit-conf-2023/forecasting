@@ -8,7 +8,7 @@ image: "nicole-avagliano-TeLjs2pL5fA-unsplash.jpg"
 <!-- Materials will be distributed sooner to the event. -->
 
 ```{=html}
-<embed src="../../materials/6-forecasting.pdf" type="application/pdf" width="750px" height="420px">
+<embed src="../../materials/6-fable.pdf" type="application/pdf" width="750px" height="420px">
 ```
 
 ## Lab sessions

@@ -8,7 +8,7 @@ image: "john-schaidler-9V3Q2W_mRLE-unsplash.jpg"
 <!-- Materials will be distributed sooner to the event. -->
 
 ```{=html}
-<embed src="../../materials/10-hierarchical.pdf" type="application/pdf" width="750px" height="420px">
+<embed src="../../materials/10-reconciliation.pdf" type="application/pdf" width="750px" height="420px">
 ```
 
 ## Lab sessions
