@@ -129,7 +129,7 @@ install.packages(c(
   \bottomrule
 \end{tabular}
 
-\vspace*{.0cm}\begin{alertblock}{}{\centerline{\Large\textbf{bit.ly/tidyts2023}}}
+\vspace*{.0cm}\begin{alertblock}{}{\centerline{\Large\textbf{pos.it/tidyts}}}
 \end{alertblock}
 
 ## Sticky notes
