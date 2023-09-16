@@ -28,19 +28,19 @@ melsyd <- tsibbledata::ansett |>
 
 ## What can we forecast?
 
-\full{nasdaq-stock-market}
+\fullwidth{nasdaq-stock-market}
 
 ## What can we forecast?
 
-\full{Forex2}
+\fullwidth{Forex2}
 
 ## What can we forecast?
 
-\full{pills}
+\fullwidth{pills}
 
 ## What can we forecast?
 
-\full{elecwires2}
+\fullwidth{elecwires2}
 
 ## What can we forecast?
 
@@ -48,11 +48,11 @@ melsyd <- tsibbledata::ansett |>
 
 ## What can we forecast?
 
-\full{ts22015}
+\fullwidth{ts22015}
 
 ## What can we forecast?
 
-\full{comet}
+\fullheight{comet}
 
 ## Which is easiest to forecast?
 

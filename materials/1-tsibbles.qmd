@@ -202,7 +202,7 @@ tribble(
 
 ## Australian prison population
 
-\full{Beechworth_prison}
+\fullwidth{Beechworth_prison}
 
 ## Read a csv file and convert to a tsibble {-}
 \fontsize{10}{11}\sf
@@ -259,7 +259,7 @@ prison
 
 ## Australian Pharmaceutical Benefits Scheme
 
-\full{pills}
+\fullwidth{pills}
 
 ## Australian Pharmaceutical Benefits Scheme
 \begin{block}{}
@@ -385,7 +385,7 @@ maxtemp |>
 
 ## Ansett airlines
 
-\full{ansettlogo}
+\fullwidth{ansettlogo}
 
 ## Ansett airlines
 \fontsize{11}{12}\sf
