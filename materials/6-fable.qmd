@@ -593,7 +593,7 @@ augment(fit) |>
 
 ```{r dj5, echo=TRUE, warning = FALSE, dependson="augment"}
 augment(fit) |>
-  autoplot(.resid) +
+  autoplot(.innov) +
   labs(x = "Day", y = "", title = "Residuals from naïve method")
 ```
 
@@ -602,7 +602,7 @@ augment(fit) |>
 
 ```{r dj6, warning=FALSE, fig.height=3.4, dependson="augment"}
 augment(fit) |>
-  ggplot(aes(x = .resid)) +
+  ggplot(aes(x = .innov)) +
   geom_histogram(bins = 150) +
   labs(title = "Histogram of residuals")
 ```
@@ -612,7 +612,7 @@ augment(fit) |>
 
 ```{r dj7, dependson="augment"}
 augment(fit) |>
-  ACF(.resid) |>
+  ACF(.innov) |>
   autoplot() + labs(title = "ACF of residuals")
 ```
 
@@ -660,15 +660,14 @@ where $\ell=$ max lag and $T=$ \# observations.}
 
 ```{r dj9extra, echo=FALSE, fig.height=1.65}
 augment(fit) |>
-  ACF(.resid, lag_max = 10) |>
+  ACF(.innov, lag_max = 10) |>
   autoplot() + labs(title = "ACF of residuals")
 ```
 
 \vspace*{-0.3cm}
 
 ```{r dj9, echo=TRUE, dependson="augment"}
-# lag = h
-augment(fit) |> features(.resid, ljung_box, lag = 10)
+augment(fit) |> features(.innov, ljung_box, lag = 10)
 ```
 
 # Lab Session 12

@@ -21,7 +21,7 @@ melsyd <- tsibbledata::ansett |>
 
 ## Pharmaceutical Benefits Scheme
 
-\full{pills}
+\fullwidth{pills}
 
 ## Pharmaceutical Benefits Scheme
 

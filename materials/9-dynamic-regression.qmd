@@ -301,7 +301,7 @@ cafe_plot <- function(...) {
     select(...) |>
     forecast() |>
     autoplot(aus_cafe) +
-    labs(title = sprintf("Log transformed %s, fourier(K = %s)", model_sum(select(fit, ...)[[1]][[1]]), deparse(..1))) +
+    labs(title = sprintf("Log transformed %s,  Fourier: %s", model_sum(select(fit, ...)[[1]][[1]]), deparse(..1))) +
     geom_label(
       aes(x = yearmonth("2007 Jan"), y = 4250, label = paste0("AICc = ", format(AICc))),
       data = glance(select(fit, ...))

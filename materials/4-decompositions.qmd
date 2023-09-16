@@ -207,14 +207,14 @@ us_retail_employment |>
 ## STL decomposition
 \fontsize{13}{15}\sf
 
-* Algorithm that updates trend and seasonal components iteratively.
+* Algorithm updates trend & seasonal components iteratively.
 * Starts with $\hat{T}_t=0$
 * Uses a mixture of loess and moving averages to successively refine the trend and seasonal estimates.
 * trend window controls loess bandwidth on deasonalised values.
-* season window controls loess bandwidth on detrended subseries.
+* season window controls loess bandwidth on detrended \rlap{subseries.}
 * Robustness weights based on remainder.
 * Default season: `window = 13`
-* Default trend:\newline\mbox{}\hfill `window = nextodd(ceiling((1.5*period)/(1-(1.5/s.window)))`
+* Default trend: `window =` \newline\mbox{}\hfill `nextodd(ceiling((1.5*period)/(1-(1.5/s.window)))`
 * `window` values should be odd numbers for symmetry.
 
 ## Australian holidays
@@ -226,7 +226,7 @@ holidays <- tourism |>
   summarise(Trips = sum(Trips))
 ```
 
-```{r holidays-plot2, echo=TRUE, dependson="holidays", fig.height=2.8}
+```{r holidays-plot2, echo=TRUE, dependson="holidays", fig.height=3.8}
 holidays |> autoplot(Trips) +
   labs(y = "thousands of trips", x = "Year",
        title = "Australian domestic holiday nights")
@@ -234,7 +234,7 @@ holidays |> autoplot(Trips) +
 
 ## Australian holidays
 
-```{r stlagain2, echo=TRUE, warning=FALSE, fig.width=8, fig.height=3}
+```{r stlagain2, echo=TRUE, warning=FALSE, fig.width=8, fig.height=3.4}
 holidays |>
   model(stl = STL(Trips)) |>
   components() |>
@@ -261,7 +261,7 @@ dcmp |> gg_subseries(season_year)
 ## Holidays decomposition
 \fontsize{9}{10}\sf
 
-```{r holidays-trend, message=FALSE, warning=FALSE, fig.height=3.5, out.height="70%"}
+```{r holidays-trend, message=FALSE, warning=FALSE, fig.height=3.8, out.height="80%"}
 autoplot(dcmp, trend, scale_bars = FALSE) +
   autolayer(holidays, alpha = 0.4)
 ```

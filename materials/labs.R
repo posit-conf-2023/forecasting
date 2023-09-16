@@ -21,6 +21,8 @@ state_tourism <- my_tourism |>
   group_by(State) |>
   summarise(Trips = sum(Trips))
 
+
+
 # Lab Session 2
 
 aus_production |> autoplot(Bricks)

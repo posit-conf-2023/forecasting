@@ -18,7 +18,7 @@ source("setup.R")
 
 ## Australian Pharmaceutical Benefits Scheme
 
-\full{pills}
+\fullwidth{pills}
 
 ## PBS sales
 \fontsize{9}{10}\sf
