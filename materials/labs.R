@@ -11,6 +11,7 @@ my_tourism <- readxl::read_excel(tourism_file) |>
     key = c(Region, State, Purpose)
   )
 
+
 my_tourism |>
   as_tibble() |>
   group_by(Region, Purpose) |>
@@ -39,6 +40,15 @@ vic_elec |> autoplot(Demand) +
   )
 
 
+
+pelt |> autoplot(vars(Lynx, Hare))
+
+pelt |> pivot_longer(Lynx:Hare) |> autoplot(value)
+
+pelt |> autoplot(Lynx) + 
+  autolayer(object=pelt, Hare, col="red")
+
+
 # Dygraphs example
 
 library(dygraphs)
@@ -61,12 +71,12 @@ snowy |> gg_subseries(Trips)
 
 # Produce a calendar plot for the `pedestrian` data from one location and one year.
 library(sugrrants)
-(tsibble::pedestrian |>
+tsibble::pedestrian |>
   filter(year(Date) == 2016, Sensor == "Southern Cross Station") |>
   frame_calendar(x = Time, y = Count, date = Date) |>
   ggplot(aes(x = .Time, y = .Count, group = Date)) +
-  geom_line()) |>
-  prettify()
+  geom_line() -> p1
+prettify(p1)
 
 
 # Lab Session 4
@@ -95,6 +105,11 @@ vic_elec |>
 
 # Lab Session 5
 
+gafa_stock |>
+  filter(Symbol == "GOOG", year(Date) >= 2018) |>
+  ACF(Close, lag_max = 50) |> 
+  autoplot()
+
 dgoog <- gafa_stock |>
   filter(Symbol == "GOOG", year(Date) >= 2018) |>
   mutate(diff = difference(Close))
@@ -116,8 +131,9 @@ gafa_stock |>
 # Lab Session 6
 
 global_economy |>
-  autoplot(GDP / Population, alpha = 0.3) +
-  guides(colour = "none")
+  autoplot(GDP / Population, alpha = 0.7) +
+  guides(colour = "none") +
+  scale_y_log10()
 
 avg_gdp_pc <- global_economy |>
   as_tibble() |>
@@ -139,7 +155,7 @@ max_gdp_pc <- global_economy |>
   )
 
 # install.packages("ggrepel")
-# Using goem_label_repel() gives nicer label positions than geom_label()
+# Using geom_label_repel() gives nicer label positions than geom_label()
 # If the ggrepel package is not available, you can use geom_label() instead
 library(ggrepel)
 global_economy |>
@@ -150,6 +166,9 @@ global_economy |>
     aes(label = Country, x = 2020, y = last),
     data = top_n(avg_gdp_pc, 5, last),
   )
+
+
+
 
 holidays <- tourism |>
   filter(Purpose == "Holiday") |>
@@ -238,7 +257,7 @@ library(broom)
 
 ## Compute features
 PBS_feat <- PBS |>
-  features(Cost, feature_set(pkgs = "feasts")) |>
+  features(Scripts, feature_set(pkgs = "feasts")) |>
   select(-`...26`) |>
   na.omit()
 
@@ -250,12 +269,12 @@ PBS_prcomp <- PBS_feat |>
 
 ## Plot the first two components
 PBS_prcomp |>
-  ggplot(aes(x = .fittedPC1, y = .fittedPC2)) +
+  ggplot(aes(x = .fittedPC1, y = .fittedPC2, col=interaction(Type,Concession))) +
   geom_point()
 
 ## Pull out most unusual series from first principal component
 outliers <- PBS_prcomp |>
-  filter(.fittedPC1 > 7)
+  filter(.fittedPC1 > 6.5)
 outliers
 
 ## Visualise the unusual series
