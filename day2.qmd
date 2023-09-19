@@ -19,4 +19,9 @@ tbl-colwidths: [5,20,50,25]
 editor: source
 ---
 
+
+## Lab code
+
+[Download](materials/labs_day1.R)
+
 ## Schedule

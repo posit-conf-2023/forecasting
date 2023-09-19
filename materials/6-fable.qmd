@@ -279,7 +279,7 @@ aligned_plots[[9]] +
 
 - Thing to be forecast: $y_{T+h}$.
 - What we know: $y_1,\dots,y_T$.
-- Forecast distribution: ${y}_{T+h|t} = y_{T+h} \mid \{y_1,y_2,\dots,y_{T}\}$.
+- Forecast distribution: ${y}_{T+h|T} = y_{T+h} \mid \{y_1,y_2,\dots,y_{T}\}$.
 - Point forecast: $\hat{y}_{T+h|T} =\text{E}[y_{T+h} \mid y_1,\dots,y_T]$.
 - Forecast variance: $\text{Var}[y_{t}  \mid y_1,\dots,y_T]$
 - Prediction interval is a range of values of $y_{T+h}$ with high probability.
@@ -644,7 +644,7 @@ where $\ell=$ max lag and $T=$ \# observations}
 
   * If each $r_k$ close to zero, $Q$ will be **small**.
   * If some $r_k$ values large ($+$ or $-$), $Q$ will be **large**.
-  * My preferences: $h=10$ for non-seasonal data, $h=2m$ for seasonal data.
+  * My preferences: $\ell=10$ for non-seasonal data, $\ell=2m$ for seasonal data.
   * If data are WN and $T$ large, $Q \sim \chi^2$ with $\ell$ degrees of freedom.
 
 ## Ljung-Box test
