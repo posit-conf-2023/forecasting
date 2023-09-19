@@ -22,6 +22,6 @@ editor: source
 
 ## Lab code
 
-[Download](materials/labs_day1.R)
+[Download](materials/labs_day2.R)
 
 ## Schedule
