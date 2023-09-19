@@ -98,6 +98,7 @@
    \tableofcontents[currentsection]
    \end{frame}
   }
+
 % Tighter table of contents
 \usepackage{etoolbox}
 \pretocmd{\section}{\addtocontents{toc}{\protect\addvspace{-20\p@}}}{}{}
@@ -105,5 +106,9 @@
 \setbeamerfont{section number projected}{size=\large}
 \setbeamertemplate{section in toc shaded}[default][50]
 
+% Boxed page number
 \setbeamertemplate{footline}{%
 \hfill\textcolor[rgb]{0.7,0.7,0.7}{\fbox{\insertframenumber{}}}}
+
+% Don't use a figure environment for images
+\renewenvironment*{figure}{}{}
