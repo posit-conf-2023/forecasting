@@ -30,6 +30,8 @@ website:
       - icon: github
         href: https://github.com/posit-conf-2023/forecasting
     left:
+      - text: Introduction
+        href: https://youtu.be/g4221KXM7hU
       - href: day1.qmd
       - href: day2.qmd
 
